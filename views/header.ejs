@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Music Uploader</title>
+</head>
+<body>
+        <header>
+            <div class="site-title">
+                <h1><a href="/">Music</a></h1>
+            </div>
+            <nav class="navbar"></nav>
+                <ul class="nav-items">
+                    <li class="nav-links"><a href="/" class="nav-links">Home</li></a>
+                    <li class="nav-links"><a href="/upload" class="nav-links">Add Music</li></a>
+                    <li class="nav-links"><a href="/view" class="nav-links">View Music</li></a>
+                    <form action="/logout?_method=DELETE" method="POST">
+                      <button type="submit" class="logOut-btn">Log Out</button>
+                    </form>
+                </ul>
+            </nav>
+        </header>

@@ -1,0 +1,27 @@
+<%- include("header") -%>
+<script src="https://use.fontawesome.com/afb7deddbd.js"></script>
+    <main class="add-wrapper">
+        <div class="addContent">
+            <h1>Add your Music</h1>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label class="custom-file-upload">
+                    <input type="file" name="file" id="thefile" onchange="alertFilename()"/>
+                    <i class="fa fa-plus-circle"></i> Select a file
+                </label>
+                <span class="upload-label">No file selected</span>
+                <br>
+                <button type="submit"><i class="fa fa-cloud-upload"> Upload</i></button>
+            </form>
+        </div>
+        <div class="addPic">
+            <img src="images/music-2.svg" alt="addPic">
+        </div>
+    </main>
+    <script>
+      function alertFilename()
+            {
+                var thefile = document.getElementById('thefile');
+                document.querySelector('.upload-label').innerHTML = thefile.value.replace("C:\\fakepath\\",'');
+            }
+    </script>
+<%- include("footer") -%>

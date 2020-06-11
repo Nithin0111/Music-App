@@ -1,0 +1,185 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    height: 10vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+}
+
+.main-heading,.nav-items{
+    display: flex;
+}
+
+.site-title{
+    flex: 1;
+    a{
+        margin-left: 80px;
+        text-decoration: none;
+        color: black;
+        font-style: italic;
+    }
+}
+
+.nav-items {
+    flex: 1;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.nav-links{
+    text-decoration: none;
+}
+
+.logOut-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px 50px 30px 5px;
+    border: 2px solid aqua;
+    background: none;
+    cursor: pointer;
+}
+
+.home-wrapper{
+    height: 90vh;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+.homeContent{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    h1{
+        line-height: 2;
+        font-style: italic;
+        letter-spacing: 0.371em;
+    }
+    p{
+        line-height: 2;
+        letter-spacing: 0.162em;
+        font-size: 18px;
+    }
+    button{
+        width: 100px;
+        margin-top: 20px;
+        height: 30px;
+        border-radius: 24px;
+        cursor: pointer;
+    }
+}
+.homePic{
+    img{
+        height: 500px;
+        position: absolute;
+        top: 20%;
+        right: 5%;
+    }
+}
+
+
+.add-wrapper{
+    height: 90vh;
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+}
+
+.addContent{
+    position: absolute;
+        top: 45%;
+        left: 20%;
+        h1{
+            line-height: 2;
+            font-style: italic;
+            font-size: 41px;
+            letter-spacing: 0.251em;
+            font-weight: 600;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        .custom-file-upload {
+            border: 1px solid #ccc;
+            font-size: 22px;
+            width: 300px;
+            height: 40px;
+            text-align: center;
+            display: inline-block;
+            padding: 6px 12px;
+            cursor: pointer;
+            background-color: lightyellow;
+        }
+        button{
+            margin-top: 20px;
+            width: 200px;
+            height: 35px;
+            background: none;
+            border: 2px solid azure;
+            cursor: pointer;
+            font-size: 18px;
+            text-align: center;
+        }
+}
+
+.addPic{
+    img{
+        height: 500px;
+        position: absolute;
+        top: 20%;
+        right: 5%;
+    }
+}
+
+.upload-label{
+    font-size: 22px;
+}
+
+.viewPic{
+    img{
+    position: absolute;
+    height: 70%;
+    top: 20%;
+    right: 5%;
+    position: fixed;
+    }
+}
+
+.viewContent{
+    height: 90vh;
+    height: 100%;
+    background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
+    button{
+        width: 200px;
+        height: 30px;
+        border-radius: 24px;
+        background-color: lightblue;
+        color: black;
+        border: 2px solid burlywood;
+    }
+    button:hover{
+        background-color: #88d3ce;
+    }
+    h1{
+        line-height: 2;
+        letter-spacing: 0.24em;
+        font-style: italic;
+        margin-left: 10%;
+        padding-top: 3%;
+    }
+}
+
+.songs-container{
+    width: 60%;
+    margin-left: 10%;
+    h2{
+        text-decoration: none;
+        color:black;
+        font-size: 22px;
+        margin-top: 20px;
+        font-style: italic;
+        padding-bottom: 20px;
+    }
+}

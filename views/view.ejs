@@ -1,0 +1,18 @@
+<%- include("header") -%>
+    <main>
+        <div class="viewContent">
+          <h1>Songs Info:</h1>
+          <% files.forEach(function(file){%>
+            <% if (file.contentType === 'audio/mpeg') { %>
+              <div class="songs-container">
+                <h2><%= file.filename %></h2><button><a href="audio/<%= file.filename %>">Play</a></button><form action="/files/<%= file._id %>?_method=DELETE" method="post"><button type="submit">Delete</button></form>
+              </div>
+            <% } %>
+            </form>
+          <% }) %>
+        </div>
+        <div class="viewPic">
+          <img src="images/music-3.svg" alt="music">
+        </div>
+    </main>
+<%- include("footer") -%>
